@@ -43,20 +43,20 @@ Codigo CADe_Simu: 4962 <br><br>
 <strong>Esquematico arranque estrella triangulo:</strong><br>
 
 <strong>Temporizador retardo a conexion:</strong><br>
-<img src="imagenes/4-estrella_triangulo/timer_retardo_conexion.jpg" alt="Temporizador con retardo a conexion" width="100%"><br>
+<img src="imagenes/4-estrella_triangulo/timer_retardo_conexion.jpg" alt="Temporizador con retardo a conexion" width="60%"><br>
 <br><br><br><br>
 <strong>Contactores estrella y triangulo:</strong><br>
 <img src="imagenes/4-estrella_triangulo/contactor_triangulo.jpg" alt="Contactor triangulo" width="100%"><br>
 <img src="imagenes/4-estrella_triangulo/contactor_estrella.jpg" alt="Contactor triangulo" width="100%"><br>
 
 <strong>Conexion arranque estrella triangulo:</strong><br>
-<img src="imagenes/4-estrella_triangulo/conexion_arranque_triangulo_estrella.jpg" alt="Arranque estrella triangulo" width="100%"><br>
+<img src="imagenes/4-estrella_triangulo/conexion_arranque_triangulo_estrella.jpg" alt="Arranque estrella triangulo" width="60%"><br>
 <br><br><br><br>
 
 ## Clase 5 - PLC Arranque directo
 
 <strong>PLC S7-1200:</strong><br>
-<img src="imagenes/5-clase_plc1/PLC_equipamento.jpg" alt="PLC_equipamento" width="100%"><br>
-<img src="imagenes/5-clase_plc1/PLC_equipamento.jpg" alt="PLC_equipamento_lateral" width="100%"><br>
-<img src="imagenes/5-clase_plc1/PLC_arranque_directo.jpg" alt="PLC_arranque_directo" width="100%"><br>
+<img src="imagenes/5-clase_plc1/PLC_equipamento.jpg" alt="PLC_equipamento" width="60%"><br>
+<img src="imagenes/5-clase_plc1/PLC_equipamento_lateral.jpg" alt="PLC_equipamento_lateral" width="60%"><br>
+<img src="imagenes/5-clase_plc1/PLC_arranque_directo.jpg" alt="PLC_arranque_directo" width="60%"><br>
 <br><br><br><br>
