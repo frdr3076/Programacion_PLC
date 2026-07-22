@@ -46,8 +46,8 @@ Codigo CADe_Simu: 4962 <br><br>
 <img src="imagenes/4-estrella_triangulo/timer_retardo_conexion.jpg" alt="Temporizador con retardo a conexion" width="60%"><br>
 <br><br><br><br>
 <strong>Contactores estrella y triangulo:</strong><br>
-<img src="imagenes/4-estrella_triangulo/contactor_triangulo.jpg" alt="Contactor triangulo" width="100%"><br>
-<img src="imagenes/4-estrella_triangulo/contactor_estrella.jpg" alt="Contactor triangulo" width="100%"><br>
+<img src="imagenes/4-estrella_triangulo/contactor_triangulo.jpg" alt="Contactor triangulo" width="60%"><br>
+<img src="imagenes/4-estrella_triangulo/contactor_estrella.jpg" alt="Contactor triangulo" width="60%"><br>
 
 <strong>Conexion arranque estrella triangulo:</strong><br>
 <img src="imagenes/4-estrella_triangulo/conexion_arranque_triangulo_estrella.jpg" alt="Arranque estrella triangulo" width="60%"><br>
