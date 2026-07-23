@@ -1,5 +1,8 @@
 # Programacion PLC
-Codigo CADe_Simu: 4962 <br><br>
+Simulador diagrmas eléctricos: CADe_Simu<br><br>
+Codigo Acceso: 4962 <br><br>
+Programa de PLC: TIA Portal 13 (ver a partir de Clase 4)<br><br>
+Documento con detalles: Programacion PLC.docx<br><br>
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 <p align="center"><img src="imagenes/1-introduccion/contactor.jpg" alt="Contactor" height="250"></p>
