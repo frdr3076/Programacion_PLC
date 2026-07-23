@@ -31,11 +31,13 @@ Codigo CADe_Simu: 4962 <br><br>
 
 ## Clase 2 - Armado de arranque directo motor trifasico
 <strong>Esquematico arranque directo:</strong><br>
+[Programa: CADe_Clase1_arranque_directo](Programas/)<br><br>
 <img src="imagenes/2-arranque_directo/arranque_directo_y_parada_motor_trifasico.svg" alt="Arranque directo motor trifasico" width="120%"><br>
 <br><br><br><br>
 
 ## Clase 3 - Arranque directo e inversion de giro
 <strong>Esquematico arranque directo e inversion de giro:</strong><br>
+[Programa: CADe_Clase3_arranque_directo_e_inversion_giro](Programas/)<br><br>
 <img src="imagenes/3-arranque_directo_e_inversion/esquema_arranque_trifasico_directo_e_inversion_de_giro.svg" alt="Arranque directo motor trifasico" width="120%"><br>
 <br><br><br><br>
 
@@ -52,6 +54,7 @@ Codigo CADe_Simu: 4962 <br><br>
 <img src="imagenes/4-estrella_triangulo/conexion_arranque_triangulo_estrella.jpg" alt="Arranque estrella triangulo" width="60%"><br>
 <br><br><br><br>
 <strong>Esquematico arranque estrella triangulo:</strong><br>
+[Programa: CADe_Clase_4_Estrella_Triangulo](Programas/)<br><br>
 <img src="imagenes/4-estrella_triangulo/esquema_arranque_estrella_triangulo.svg" alt="Esquema arranque estrella triangulo" width="100%"><br>
 <br><br><br><br>
 ## Clase 5 - PLC Arranque directo
