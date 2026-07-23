@@ -40,7 +40,6 @@ Codigo CADe_Simu: 4962 <br><br>
 <br><br><br><br>
 
 ## Clase 4 - Arranque estrella triangulo
-<strong>Esquematico arranque estrella triangulo:</strong><br>
 
 <strong>Temporizador retardo a conexion:</strong><br>
 <img src="imagenes/4-estrella_triangulo/timer_retardo_conexion.jpg" alt="Temporizador con retardo a conexion" width="60%"><br>
@@ -52,7 +51,9 @@ Codigo CADe_Simu: 4962 <br><br>
 <strong>Conexion arranque estrella triangulo:</strong><br>
 <img src="imagenes/4-estrella_triangulo/conexion_arranque_triangulo_estrella.jpg" alt="Arranque estrella triangulo" width="60%"><br>
 <br><br><br><br>
-
+<strong>Esquematico arranque estrella triangulo:</strong><br>
+<img src="imagenes/4-estrella_triangulo/esquema_arranque_estrella_triangulo.svg" alt="Esquema arranque estrella triangulo" width="100%"><br>
+<br><br><br><br>
 ## Clase 5 - PLC Arranque directo
 
 <strong>PLC S7-1200:</strong><br>
