@@ -3,6 +3,16 @@ Simulador diagrmas eléctricos: CADe_Simu<br><br>
 Codigo Acceso: 4962 <br><br>
 Programa de PLC: TIA Portal 13 (ver a partir de Clase 4)<br><br>
 Documento con detalles: Programacion PLC.docx<br><br>
+
+# Índice
+<!-- [Texto visible clickeable](#anchor-que-funciona-como-enlace) El anchor en lugar de espacios, se separa por "-" -->
+- [Clase 1 - Introduccion](#clase-1---introduccion)
+- [Clase 2 - Armado de arranque directo motor trifasico](#clase-2---armado-de-arranque-directo-motor-trifasico)
+- [Clase 3 - Arranque directo e inversion de giro](#clase-3---arranque-directo-e-inversion-de-giro)
+- [Clase 4 - Arranque estrella triangulo](#clase-4---arranque-estrella-triangulo)
+- [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
+
+
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 <p align="center"><img src="imagenes/1-introduccion/contactor.jpg" alt="Contactor" height="250"></p>
