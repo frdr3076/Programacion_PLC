@@ -15,22 +15,33 @@ Documento con detalles: Programacion PLC.docx<br><br>
 
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
+Es interruptor electromagnético accionado por medio de bobina. Campo magnético atrae a núcleo y cierra los contactos. Posee contactos de control. Al desenergizarse desaparece campo magnético y resorte devuelve núcleo a posición inicial.
+<br>
 <p align="center"><img src="imagenes/1-introduccion/contactor.jpg" alt="Contactor" height="250"></p>
 <br><br><br><br>
 
 <strong>Contactos Auxiliares:</strong><br>
+Ayudan con la lógica del contactor. Se encuentran dentro del propio contactor. Sirven para auto-retemcion y aplicar lógica de enclavamiento. Pueden ser NC (normal cerrado) o NA (normal abierto).
+<br>
 <p align="center"><img src="imagenes/1-introduccion/contactos_auxiliares_nc_na.jpg" alt="Contactos auxiliares" height="250"></p>
 <br><br><br><br>
 
 <strong>Interruptor Automatico:</strong><br>
+Es un elemento que protege contra cortocircuitos (contacto terminal positiva y negativa).
+No se destruye al actuar. Se recupera rearmarse al levantar palanca.
+<br>
 <p align="center"><img src="imagenes/1-introduccion/interruptor_automatico.jpg" alt="Interruptor Automatico" height="250"></p>
 <br><br><br><br>
 
 <strong>Pulsador:</strong><br>
+Cierra o abre el circuito mientras se mantenga pulsado. Puede ser NC o NA. 
+<br>
 <p align="center"> <img src="imagenes/1-introduccion/pulsador.jpg" alt="Pulsador" height="250"> </p>
 <br><br><br><br>
 
 <strong>Relé Térmico:</strong><br>
+Protege al motor de sobrecargas al detectar sobrecorriente y abre el circuito de control. Si el motor está consumiendo más corriente que la debería puede calentarse y dañarse. Utiliza láminas bimetálicas que se calientan y deforman lentamente, accionando el mecanismo de disparo.
+<br>
 <p align="center"> <img src="imagenes/1-introduccion/rele_termico.jpg" alt="rele_termico" height="250"> </p>
 <br><br><br><br>
 
@@ -39,6 +50,8 @@ Documento con detalles: Programacion PLC.docx<br><br>
 <br><br><br><br>
 
 <strong>Bobina:</strong><br>
+Asociada a contactores, al energizarse lo cerrará.
+<br>
 <p align="center"> <img src="imagenes/1-introduccion/bobina.jpg" alt="Bobina" height="250"> </p>
 <br><br><br><br>
 
