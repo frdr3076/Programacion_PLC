@@ -11,7 +11,7 @@ Documento con detalles: Programacion PLC.docx<br><br>
 - [Clase 3 - Arranque directo e inversion de giro](#clase-3---arranque-directo-e-inversion-de-giro)
 - [Clase 4 - Arranque estrella triangulo](#clase-4---arranque-estrella-triangulo)
 - [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
-- [Clase 6 - Utilizacion de Memoria, Flancos, Set y Reset](#clase-6---utilizacion-de-memoria,-flancos,-set-y-reset)
+- [Clase 6 - Utilizacion de Memoria, Flancos, Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
 
 
 ## Clase 1 - Introduccion
@@ -131,23 +131,27 @@ Para optimizar diseños también es recomendable utilizar los mapas de Karnaugh.
 <img src="imagenes/5-clase_plc1/ladder_funcion_logica_FUNCION.svg" alt="ladder_funcion" width="60%"><br>
 <img src="imagenes/5-clase_plc1/ladder_funcion_logica_FUNCION_KARNAUGH.svg" alt="ladder_funcion_karnaugh" width="60%"><br>
 
-## Clase 6 - Utilizacion de memoria, flancos, set y reset
-Puede contruirse un "interruptor" con estos elementos:<br>
-<a href="imagenes/4-estrella_triangulo/video-mem-set-reset.mp4">Ver video demostración</a>
-<br>
+## Clase 6 - Utilizacion de Memoria, Flancos, Set y Reset
 
-Esquema CADe SIMU de conexión PLC físico con Set y Reset
-<br>
 Ejercicio simple con Set y Reset:
 <br><br>
 <img src="imagenes/6-mem-set-reset/ej_simple_set_reset.jpg" alt="ladder_mem_set_reset" width="60%"><br>
+<br><br>
+
+
+Puede contruirse un "interruptor" con estos elementos:<br>
+
+Efecto interruptor: Con un pulsador normal al pulsar y soltar, la señal vuelve a 0. Esta implementación puede "recordar" si el motor debe encender o apagar usando bit "M10.1", que guarda el último estado del motor.<br>
+
+<a href="imagenes/4-estrella_triangulo/video-mem-set-reset.mp4">Ver video demostración</a>
 <br>
 
-Ejercicio SET y RESET utilizando memoria:
-<br><br>
-<img src="imagenes/6-mem-set-reset/diagrama_set_reset_mem_con_plc.svg" alt="ladder_mem_set_reset" width="60%"><br>
 
-Efecto interruptor: Con un pulsador normal al pulsar y soltar, la señal vuelve a 0. Esta implementación puede "recordar" si el motor debe encender o apagar usando bit "M10.1", que guarda el último estado del motor.
+Esquema CADe SIMU de conexión PLC físico con Set y Reset
+
+<br><br>
+<img src="imagenes/6-mem-set-reset/diagrama_set_reset_mem_con_plc.jpg" alt="ladder_mem_set_reset" width="60%">
+<br>
 
 Rung 1 y 2: Decide si hacer SET o RESET.<br>
 Rung 1: Flanco & (M_P = 0) entonces SET Motor.
