@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="_9W2awg3bgbWkruAI8nw">
+    <mxGraphModel dx="1032" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="190" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="374" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="179.65999999999994" as="sourcePoint" />
+            <mxPoint x="374" y="179.65999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-5" edge="1" parent="1" source="CfvcrKOVtKdji3OZkHHN-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="CfvcrKOVtKdji3OZkHHN-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="280" />
+              <mxPoint x="230" y="280" />
+            </Array>
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="300" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Control" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Medición" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sensores de variables internas" vertex="1">
+          <mxGeometry height="30" width="110" x="274" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sensores estimulos externos" vertex="1">
+          <mxGeometry height="30" width="110" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="CfvcrKOVtKdji3OZkHHN-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="CfvcrKOVtKdji3OZkHHN-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="101" y="180" as="sourcePoint" />
+            <mxPoint x="310" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
