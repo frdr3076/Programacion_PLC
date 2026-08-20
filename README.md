@@ -11,7 +11,7 @@ Documento con detalles: Programacion PLC.docx<br><br>
 - [Clase 3 - Arranque directo e inversion de giro](#clase-3---arranque-directo-e-inversion-de-giro)
 - [Clase 4 - Arranque estrella triangulo](#clase-4---arranque-estrella-triangulo)
 - [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
-- [Clase 6 - Utilizacion de Memoria, Flancos, Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
+- [Clase 6 - Utilizacion de Memoria,Flancos,Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
 
 
 ## Clase 1 - Introduccion
@@ -131,7 +131,7 @@ Para optimizar diseños también es recomendable utilizar los mapas de Karnaugh.
 <img src="imagenes/5-clase_plc1/ladder_funcion_logica_FUNCION.svg" alt="ladder_funcion" width="60%"><br>
 <img src="imagenes/5-clase_plc1/ladder_funcion_logica_FUNCION_KARNAUGH.svg" alt="ladder_funcion_karnaugh" width="60%"><br>
 
-## Clase 6 - Utilizacion de Memoria, Flancos, Set y Reset
+## Clase 6 - Utilizacion de Memoria,Flancos,Set y Reset
 
 Ejercicio simple con Set y Reset:
 <br><br>
