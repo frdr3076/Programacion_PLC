@@ -74,6 +74,14 @@ Asociada a contactores, al energizarse lo cerrará.
 
 ## Clase 4 - Arranque estrella triangulo
 
+El motor trifásico es de marca SIEMENS, Modelo: 1MJ6133-4CA60 (trifásico asíncrono) de 85 kg.<br>
+Potencia de motor: 4 kW.<br>
+Frecuencia: 50 Hz.<br>
+Velocidad nominal: 945 rpm (motor de 6 polos)<br>
+Factor de potencia cos(phi): 0,76.<br>
+Tensión nominal: 400/690 V (triangulo/estrella) o rango de 380-420V/660-725 V (triangulo/estrella).<br>
+Corriente nominal: 9,6 A en triangulo / 5,5 A en estrella para 400/690V (y hasta 10 A / 5,8 A en el rango de voltaje extendido).<br>
+<br>
 <strong>Temporizador retardo a conexion:</strong><br>
 <img src="imagenes/4-estrella_triangulo/timer_retardo_conexion.jpg" alt="Temporizador con retardo a conexion" width="60%"><br>
 <br><br><br><br>
