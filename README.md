@@ -174,15 +174,24 @@ Rung 4: Detectar motor apagado: Cuando MOTOR = 0 se ejecuta RESET M_P, entonces 
 
 TON: Time On Delay <br>
 
+<img src="imagenes/7-timers/TON.jpg" alt="TON_diagram" width="60%">
+
 <br>
 
 TOF: Time Off Delay <br>
+
+<img src="imagenes/7-timers/TOF.jpg" alt="TOF_diagram" width="60%">
 
 <br>
 
 TP: Time Pulse <br>
 
+<img src="imagenes/7-timers/TP.jpg" alt="TP_diagram" width="60%">
+
 <br>
 
 ## Clase 8 - Schneider
 
+<img src="schneider electric/imagenes/hmi_sim_leds.jpg" alt="Simulacion LEDs HMI" width="60%">
+
+<img src="schneider electric/imagenes/hmi_sim_semaforo.jpg" alt="Simulacion SEMAFORO HMI" width="60%">
