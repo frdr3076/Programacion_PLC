@@ -12,6 +12,8 @@ Documento con detalles: Programacion PLC.docx<br><br>
 - [Clase 4 - Arranque estrella triangulo](#clase-4---arranque-estrella-triangulo)
 - [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
 - [Clase 6 - Utilizacion de Memoria,Flancos,Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
+- [Clase 7 - Temporizadores](#clase-7---temporizadores)
+- [Clase 8 - Schneider](#clase-8---schneider)
 
 
 ## Clase 1 - Introduccion
@@ -167,3 +169,20 @@ Rung 2: Flanco & (M_P = 1) entonces SET Motor. <br>
 
 Rung 3: Detectar motor encendido: Cuando MOTOR = 1 se ejecuta SET M_P, entonces M_P = 1 <br>
 Rung 4: Detectar motor apagado: Cuando MOTOR = 0 se ejecuta RESET M_P, entonces M_P = 0 <br>
+
+## Clase 7 - Temporizadores
+
+TON: Time On Delay <br>
+
+<br>
+
+TOF: Time Off Delay <br>
+
+<br>
+
+TP: Time Pulse <br>
+
+<br>
+
+## Clase 8 - Schneider
+
