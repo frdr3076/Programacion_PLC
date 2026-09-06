@@ -192,6 +192,13 @@ TP: Time Pulse <br>
 
 ## Clase 8 - Schneider
 
+Utilizacion de Machine Expert - Basic (Schneider Electric) para programar y simular Ladder. En este caso ejercicio de semáforo con timers. <br>
+
+<img src="imagenes/8-schneider/semaforo_con_enclav_ladder_schneider.jpg" alt="Simulacion ladder semaforo" width="60%">
+
+Utilizacion de Veijeo para programar pantallas HMI. <br>
+
 <img src="imagenes/8-schneider/hmi_sim_leds.jpg" alt="Simulacion LEDs HMI" width="60%">
 
-<img src="imagenes/8-schneider/hmi_sim_semaforo.jpg" alt="Simulacion SEMAFORO HMI" width="60%">
+<img src="imagenes/8-schneider/hmi_sim_semaforo.jpg" alt="Simulacion semaforo HMI" width="60%">
+
