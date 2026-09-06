@@ -192,6 +192,6 @@ TP: Time Pulse <br>
 
 ## Clase 8 - Schneider
 
-<img src="schneider electric/imagenes/hmi_sim_leds.jpg" alt="Simulacion LEDs HMI" width="60%">
+<img src="imagenes/8-shneider/hmi_sim_leds.jpg" alt="Simulacion LEDs HMI" width="60%">
 
-<img src="schneider electric/imagenes/hmi_sim_semaforo.jpg" alt="Simulacion SEMAFORO HMI" width="60%">
+<img src="imagenes/8-shneider/hmi_sim_semaforo.jpg" alt="Simulacion SEMAFORO HMI" width="60%">
