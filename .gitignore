@@ -1,0 +1,10 @@
+~$*.docx
+*.tmp
+
+# Ignorar instaladores pesados específicos
+Schneider Electric/MachineExpertBasicV1_4/MachineExpertBasic_V1.4_Build484.exe
+Schneider Electric/VijeoDesignerBasicV2.1_V2.1.2.102/VijeoDesignerBasicV2.1_V2.1.2.102.exe
+
+# O ignorar todos los ejecutables (.exe) del proyecto
+*.exe
+Schneider Electric/
