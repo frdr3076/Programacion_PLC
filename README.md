@@ -190,6 +190,12 @@ TP: Time Pulse <br>
 
 <br>
 
+En esta clase también se realiza ejercicio de montacargas en TIA Portal: <br>
+El ejercicio consiste en que un motor sube y baja un montacarga entre 3 pisos (SS, PB, 1er piso) utilizando 3 sensores y 3 pulsadores
+un sensor y un pulsador por cada piso.
+
+<br>
+
 ## Clase 8 - Schneider
 
 Utilizacion de Machine Expert - Basic (Schneider Electric) para programar y simular Ladder. En este caso ejercicio de semáforo con timers. <br>
