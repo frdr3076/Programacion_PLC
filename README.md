@@ -246,10 +246,10 @@ El programa de control activa salidas %Qx.x de forma progresiva hasta que los 3 
 
 ## Clase 11 - HMI Siemens
 Utilizamos Switch CSM1277 Simatic para tener conexión Ethernet en simultaneo con PLC S7-1200 y KTP600.<br>
-<img src="imagenes/11-hmi-siemens/switch_siemens_csm1277_simatic.jpeg" alt="Switch Ethernet CSM1277 Simatic" width="60%">
+<img src="imagenes/11-hmi-siemens/switch_siemens_csm1277_simatic.jpeg" alt="Switch Ethernet CSM1277 Simatic" width="30%">
 
 Configuración de pantalla HMI de 6 pulgadas KTP600 SIMATIC por comunicación Ethernet.<br>
-<img src="imagenes/11-hmi-siemens/redes_hmi_siemens.jpeg" alt="Conexion redes switch plc y hmi" width="60%">
+<img src="imagenes/11-hmi-siemens/redes_hmi_siemens.jpeg" alt="Conexion redes switch plc y hmi" width="45%">
 <br>
 
 Programa básico para activar salidas e indicarlas con un "led" (circulo) verde o rojo si está activada o no.<br>
