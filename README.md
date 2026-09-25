@@ -15,7 +15,7 @@ Documento con detalles: Programacion PLC.docx<br><br>
 - [Clase 7 - Temporizadores](#clase-7---temporizadores)
 - [Clase 8 - Machine Expert Basic - Schneider](#clase-8---schneider)
 - [Clase 9 - Contadores](#clase-9---contadores)
-
+- [Clase 10 - Variador de velocidad](#clase-10---variador-de-velocidad)
 
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
@@ -219,3 +219,37 @@ Aplicación en ejercicio de cintas transportadoras.<br>
 
 Cintas transportadoras con Veijeo<br>
 <img src="imagenes/9-contadores/veijeo_cintas_transportadoras_contadores_mejorado.jpg" alt="Veijeo cintas transportadoras mejoradas" width="60%">
+
+## Clase 10 - Variador de velocidad
+Para sistemas trifásicos, mejora las condiciones de arranque.<br>
+El variador utilizado es de marca Synamics G120. Consiste en 3 modulos: Potencia, Control y Operacion.<br>
+Utiliza parametros para ser configurados.<br>
+p700 = BORNES
+p701 = CON/DES
+p702 = SENTIDO GIRO
+p703 = BIT0
+p704 = BIT1
+p705 = BIT2
+p1000 = CONSIGUE VELOCIDAD
+p1001 = VELOCIDAD FIJA 1
+<br>
+Combinando los BIT tenés 2^3 = 8 posibles velocidades.
+<img src="imagenes/10-variador-velocidad/control_variador_velocidad.jpg" alt="Prueba variador velocidad" width="60%">
+
+Secuencia temporizada para aumentar velocidad de variador:
+<img src="imagenes/10-variador-velocidad/secuencia_variador_velocidad.jpg" alt="Equipos para secuencia variador velocidad" width="60%">
+
+El programa de control activa salidas %Qx.x de forma progresiva hasta que los 3 bits estén activos para alcanzar máxima velocidad y detiene el motor.<br>
+<img src="imagenes/10-variador-velocidad/programa_secuencia_variador_vel.jpg" alt="Programa Secuencia Variador Velocidad" width="60%">
+
+## Clase 11 - HMI Siemens
+Utilizamos Switch CSM1277 Simatic para tener conexión Ethernet en simultaneo con PLC S7-1200 y KTP600.<br>
+<img src="imagenes/11-hmi-siemens/switch_siemens_csm1277_simatic.jpg" alt="Switch Ethernet CSM1277 Simatic" width="60%">
+
+Configuración de pantalla HMI de 6 pulgadas KTP600 SIMATIC por comunicación Ethernet.<br>
+<img src="imagenes/11-hmi-siemens/redes_hmi_siemens.jpg" alt="Conexion redes switch plc y hmi" width="60%">
+<br>
+
+Programa básico para activar salidas e indicarlas con un "led" (circulo) verde o rojo si está activada o no.<br>
+<img src="imagenes/11-hmi-siemens/hmi-ktp600-prueba.jpg" alt="HMI KTP600 Prueba" width="60%">
+
