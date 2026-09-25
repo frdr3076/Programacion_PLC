@@ -13,7 +13,8 @@ Documento con detalles: Programacion PLC.docx<br><br>
 - [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
 - [Clase 6 - Utilizacion de Memoria,Flancos,Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
 - [Clase 7 - Temporizadores](#clase-7---temporizadores)
-- [Clase 8 - Schneider](#clase-8---schneider)
+- [Clase 8 - Machine Expert Basic - Schneider](#clase-8---schneider)
+- [Clase 9 - Contadores](#clase-9---contadores)
 
 
 ## Clase 1 - Introduccion
@@ -196,15 +197,25 @@ un sensor y un pulsador por cada piso.
 
 <br>
 
-## Clase 8 - Schneider
+## Clase 8 - Machine Expert Basic - Schneider
 
 Utilizacion de Machine Expert - Basic (Schneider Electric) para programar y simular Ladder. En este caso ejercicio de semáforo con timers. <br>
 
 <img src="imagenes/8-schneider/semaforo_con_enclav_ladder_schneider.jpg" alt="Simulacion ladder semaforo" width="60%">
 
-Utilizacion de Veijeo para programar pantallas HMI. <br>
+Utilizacion de Veijeo para programar pantallas HMI (HMIGXU3512X 800x480) <br>
 
 <img src="imagenes/8-schneider/hmi_sim_leds.jpg" alt="Simulacion LEDs HMI" width="60%">
 
 <img src="imagenes/8-schneider/hmi_sim_semaforo.jpg" alt="Simulacion semaforo HMI" width="60%">
 
+## Clase 9 - Contadores
+Introducción a contadores en Schneider y Siemens (ascendentes, descendentes, ambos).<br>
+
+<img src="imagenes/9-contadores/diagrama_contador_ctud.jpg" alt="Diagrama contadores CTUD" width="60%">
+
+Aplicación en ejercicio de cintas transportadoras.<br>
+<img src="imagenes/9-contadores/ladder_cintas_contadores.jpg" alt="Ladder Cintas transportadoras con Contadores" width="60%">
+
+Cintas transportadoras con Veijeo<br>
+<img src="imagenes/9-contadores/veijeo_cintas_transportadoras_contadores_mejorado.jpg" alt="Veijeo cintas transportadoras mejoradas" width="60%">
