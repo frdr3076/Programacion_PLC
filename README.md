@@ -6,11 +6,16 @@ Documento con detalles: Programacion PLC.docx<br><br>
 
 # Índice
 <!-- [Texto visible clickeable](#anchor-que-funciona-como-enlace) El anchor en lugar de espacios, se separa por "-" -->
+Nivel 1
+
 - [Clase 1 - Introduccion](#clase-1---introduccion)
 - [Clase 2 - Armado de arranque directo motor trifasico](#clase-2---armado-de-arranque-directo-motor-trifasico)
 - [Clase 3 - Arranque directo e inversion de giro](#clase-3---arranque-directo-e-inversion-de-giro)
 - [Clase 4 - Arranque estrella triangulo](#clase-4---arranque-estrella-triangulo)
 - [Clase 5 - PLC Arranque directo](#clase-5---plc-arranque-directo)
+
+Nivel 2
+
 - [Clase 6 - Utilizacion de Memoria,Flancos,Set y Reset](#clase-6---utilizacion-de-memoria,flancos,set-y-reset)
 - [Clase 7 - Temporizadores](#clase-7---temporizadores)
 - [Clase 8 - Machine Expert Basic - Schneider](#clase-8---schneider)
