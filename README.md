@@ -273,6 +273,6 @@ Las variables utilizadas para este programa fueron:
 <br>
 <img src="imagenes/12-condicionales/variables_plc_semaforo_condicionales.jpeg" alt="Variables Semaforo con Condicionales" width="45%">
 <br>
-Se puede ver el funcionamiento del programa en la carpeta: <br>
-[Semaforo con condiciones](imagenes/12-condicionales/funcionamiento_semaforo_condicionales.mp4)
+Se puede ver el funcionamiento del programa en la siguiente carpeta: en el archivo "funcionamiento_semaforo_condicionales.mp4.mp4" <br>
+[Semaforo con condiciones](imagenes/12-condicionales/)
 
