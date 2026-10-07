@@ -113,6 +113,11 @@ Corriente nominal: 9,6 A en triangulo / 5,5 A en estrella para 400/690V (y hasta
 
 ## Clase 5 - PLC Arranque directo
 
+Partes de un PLC:
+<br>
+<img src="imagenes/1-introduccion/partes_PLC.jpg" alt="partes PLC" width="100%">
+<br>
+
 ### Lenguajes Programación PLC (IEC 61131-3)
 - Diagrama Ladder (LD)
 - Diagrama Bloques Funcionales (FBD)
