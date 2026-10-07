@@ -23,6 +23,9 @@ Nivel 2
 - [Clase 10 - Variador de velocidad](#clase-10---variador-de-velocidad)
 - [Clase 11 - HMI Siemens](#clase-11---hmi-siemens)
 
+Nivel 3
+- [Clase 12 - Condicionales y Timers](#clase-12---condicionales-y-timers)
+
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 Es interruptor electromagnético accionado por medio de bobina. Campo magnético atrae a núcleo y cierra los contactos. Posee contactos de control. Al desenergizarse desaparece campo magnético y resorte devuelve núcleo a posición inicial.
@@ -259,4 +262,17 @@ Configuración de pantalla HMI de 6 pulgadas KTP600 SIMATIC por comunicación Et
 
 Programa básico para activar salidas e indicarlas con un "led" (circulo) verde o rojo si está activada o no.<br>
 <img src="imagenes/11-hmi-siemens/hmi-ktp600-prueba.jpg" alt="HMI KTP600 Prueba" width="60%">
+<br>
+
+## Clase 12 - Condicionales y Timers
+Utilizamos condiciones para encender en diferentes momentos un semaforo.
+<img src="imagenes/12-condicionales/programa_plc_semaforo_condiciones.jpeg" alt="Programa Semaforo Condicionales" width="45%">
+<br>
+
+Las variables utilizadas para este programa fueron:
+<br>
+<img src="imagenes/12-condicionales/variables_plc_semaforo_condicionales.jpeg" alt="Variables Semaforo con Condicionales" width="45%">
+<br>
+Se puede ver el funcionamiento del programa en la carpeta: <br>
+[Semaforo con condiciones](imagenes/12-condicionales/funcionamiento_semaforo_condicionales.mp4)
 
