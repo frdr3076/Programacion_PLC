@@ -121,11 +121,14 @@ Corriente nominal: 9,6 A en triangulo / 5,5 A en estrella para 400/690V (y hasta
 - Lista de Instrucciones (IL)
 
 ### Configuracion de PLC Siemens 1200
+Las partes de un PLC son las siguientes:<br>
+<img src="imagenes/1-introduccion/partes_de_un_plc.jpeg" alt="partes de un PLC" width="100%"><br>
+
 1) Crear Proyecto > Seleccionar Nombre y Ruta
 2) Dispositivos y Redes > Agregar dispositivos > S7-1200 el nuestro es CPU 1214ACDCRly > Ver cual es el equipo 6E17 214BE30-0XB0
 3) Sobre la imagen del PLC, para bajar los datos hacer doble click en el puerto Profinet y ajustar dirección IP y máscara subred según dispositivo: 
 El último dígito depende el dispositivo que use en la red, Ejemplo: 192.168.0.1. Conectar el cable Ethernet.
-4) Variables PLC > Tabla de variables: Crear las variables que utilizaré en el proyecto.
+4) Variables PLC > Tabla de variables: Crear las variables que utilizaré en el proyecto.<br>
 <img src="imagenes/6-mem-set-reset/tabla_de_variables.jpg" alt="tabla_de_variables_plc" width="100%"><br>
 6) Barra de Herramientas > Cargar dispositivo > Tipo interfaz PN/IE. Cargar información cuando esté en STOP.<br>
 <img src="imagenes/6-mem-set-reset/config_run_error.jpg" alt="config run error" width="100%"><br>
