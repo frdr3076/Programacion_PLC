@@ -115,7 +115,7 @@ Corriente nominal: 9,6 A en triangulo / 5,5 A en estrella para 400/690V (y hasta
 
 Partes de un PLC:
 <br>
-<img src="imagenes/1-introduccion/partes_PLC.jpg" alt="partes PLC" width="100%">
+<img src="imagenes/1-introduccion/partes_PLC.jpg" alt="partes PLC" width="65%">
 <br>
 
 ### Lenguajes Programación PLC (IEC 61131-3)
