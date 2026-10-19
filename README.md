@@ -25,7 +25,7 @@ Nivel 2
 
 Nivel 3
 - [Clase 12 - Condicionales y Timers](#clase-12---condicionales-y-timers)
-
+- [Clase 13 - Control Analógico](#clase-13---control-analogico)
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 Es interruptor electromagnético accionado por medio de bobina. Campo magnético atrae a núcleo y cierra los contactos. Posee contactos de control. Al desenergizarse desaparece campo magnético y resorte devuelve núcleo a posición inicial.
@@ -283,4 +283,27 @@ Las variables utilizadas para este programa fueron:
 <br>
 Se puede ver el funcionamiento del programa en la siguiente carpeta: en el archivo "funcionamiento_semaforo_condicionales.mp4.mp4" <br>
 [Semaforo con condiciones](imagenes/12-condicionales/)
+
+
+## Clase 13 - Control analogico
+
+<br>
+Hacemos el siguiente diagrama para controlar el tiempo que tarda el circuito en cerrarse utilizando un control analógico del tiempo.
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_pot.jpg" alt="potenciometro" width="70%">
+<br>
+Implementación utilizando potenciometro
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/potenciometro_control_analogico.jpeg" alt="circuito_potenciometro" width="60%">
+<br><br>
+Ahora se implementa un circuito utilizando variador de velocidad para variar velocidad de motor trifásico y también el sentido de giro.
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_variador_ctrl_analogico.jpg" alt="diagrama_variador_con_potenciometro" width="70%">
+<br>
+El diagrama ladder implementado es el siguiente:<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/ladder_variador_control_analogico.jpeg" alt="ladder_variador_con_potenciometro" width="60%">
+<br>
+El montaje del circuito es el siguiente: <br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/Variador_control_analogico.jpeg" alt="circuito_variador_con_potenciometro" width="60%">
+
 
