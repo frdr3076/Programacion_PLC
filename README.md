@@ -273,7 +273,17 @@ Programa básico para activar salidas e indicarlas con un "led" (circulo) verde 
 <br>
 
 ## Clase 12 - Condicionales y Timers
-Utilizamos condiciones para encender en diferentes momentos un semaforo.
+
+Revisión de los tipos de datos existentes<br>
+Las direcciones de memoria se leen de la siguiente forma <br>
+Parte      Significado <br>
+%          Prefijo de TIA Portal para dirección absoluta <br>
+1° letra   Zona de memoria: I = Entrada, Q = Salida, M = Marcas (memoria) <br>
+2° letra   Tamaño: (nada) = bit, B = byte (8 bits), W = Word (16 bits), D = Doble word (32 bits) <br>
+Numero     Byte donde empieza el dato <br>
+<br>
+
+Como ejercitación utilizamos condiciones para encender en diferentes momentos un semaforo.<br>
 <img src="imagenes/12-condicionales/programa_plc_semaforo_condiciones.jpeg" alt="Programa Semaforo Condicionales" width="45%">
 <br>
 
@@ -289,7 +299,17 @@ Se puede ver el funcionamiento del programa en la siguiente carpeta: en el archi
 
 <br>
 
-Hacemos el siguiente diagrama para controlar el tiempo que tarda el circuito en cerrarse utilizando un control analógico del tiempo.
+Hacemos el siguiente diagrama de temporizador de marcha para controlar el tiempo que tarda el circuito en pararse entre (0 y 10 s) utilizando un control analógico con potenciómetro para seleccionar el tiempo.
+
+%I0.0 (INICIO) activa %M0.0 y la marca queda enclavada aunque suelte el pulsador.<br>
+Mientras %M0.0 = 1 se activa %Q0.0. <br>
+NORM_X lee entrada analógica %IW64 de 0V a 10V (0-27648) que lo pasa a número real entre 0.0 y 1.0,
+este valor queda guardado en %MD100. <br>
+SCALE_X convierte 0.0-1.0 al rango 0-10000 (base de tiempo: milisegundos) y lo guarda en %MD120, es decir que el rango queda entre 0V y 10V <br>
+T_CONV pada DINT de %MD120 al tipo TIME en %MD200. El tipo TIME se cuenta en ms (milisegundos).
+TEM1 (TON)
+Cuando %M0.0 = 1, el temporizador empieza a contar hasta PT = %MD200. Al cumplir el tiempo TEM1.Q=1 y la bobina R apaga %M0.0 apagando el motor y reiniciando temporizador <br>
+
 
 <br>
 <img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_pot.jpg" alt="potenciometro" width="70%">
@@ -302,14 +322,20 @@ Implementación utilizando potenciometro
 Ahora se implementa un circuito utilizando variador de velocidad Synamics G120 para variar velocidad de motor trifásico y también el sentido de giro.
 
 Potenciómetro -> %IW64
-Entrega una tensión de 0 a 10 V que llega a la entrada analógica integrada de CPU1214C (AIO = IW64)
-El PLC la convertirá en un número entero: 0V -> 0 y 10V -> 27648
+Entrega una tensión de 0 a 10 V que llega a la entrada analógica integrada de CPU1214C (10bits) y lo digitaliza (AIO = IW64 de 16 bits) <br>
+El PLC la convertirá en un número entero: 0V -> 0 y 10V -> 27648 <br>
 
 <br>
 
 El bloque MOVE: IW64 -> QW80 
 Copia este número tal cual a la salida analógica QW80.<br>
-Pero el 1214C AC/DC/Rly no tiene salida analógica integrada, entonces QW80 corresponde con Signal Board SB1232 aq (12 bits)
+Pero el 1214C AC/DC/Rly no tiene salida analógica integrada, entonces QW80 corresponde con Signal Board SB1232 (12 bits) <br>
+
+Se utiliza MD100 ya que es una palabra de 32 bits. Corresponde a memoria interna del PLC.
+Ocupa los bytes MB100, MB101, MB102 y MB103.
+Sirve para guardar números REALES (decimal con coma flotante) como velocidad en Hz.
+
+<br>
 
 Contactos I0.0/I0.1 -> Q0.0/Q0.1 de lógica directa.
 Si la entrada está activa, se activa la salida. Las salidas son de relé y cierran un contacto.
