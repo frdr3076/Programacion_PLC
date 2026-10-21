@@ -241,14 +241,14 @@ Cintas transportadoras con Veijeo<br>
 Para sistemas trifásicos, mejora las condiciones de arranque.<br>
 El variador utilizado es de marca Synamics G120. Consiste en 3 modulos: Potencia, Control y Operacion.<br>
 Utiliza parametros para ser configurados.<br>
-p700 = BORNES
-p701 = CON/DES
-p702 = SENTIDO GIRO
-p703 = BIT0
-p704 = BIT1
-p705 = BIT2
-p1000 = CONSIGUE VELOCIDAD
-p1001 = VELOCIDAD FIJA 1
+p700 = BORNES <br>
+p701 = CON/DES <br>
+p702 = SENTIDO GIRO <br>
+p703 = BIT0 <br>
+p704 = BIT1 <br>
+p705 = BIT2 <br>
+p1000 = CONSIGUE VELOCIDAD <br>
+p1001 = VELOCIDAD FIJA 1 <br>
 <br>
 Combinando los BIT tenés 2^3 = 8 posibles velocidades.<br>
 <img src="imagenes/10-variador-velocidad/control_variador_velocidad.jpg" alt="Prueba variador velocidad" width="50%">
@@ -288,7 +288,9 @@ Se puede ver el funcionamiento del programa en la siguiente carpeta: en el archi
 ## Clase 13 - Control analogico
 
 <br>
+
 Hacemos el siguiente diagrama para controlar el tiempo que tarda el circuito en cerrarse utilizando un control analógico del tiempo.
+
 <br>
 <img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_pot.jpg" alt="potenciometro" width="70%">
 <br>
@@ -296,7 +298,30 @@ Implementación utilizando potenciometro
 <br>
 <img src="imagenes/nivel_3_y_4/2-control_analogico/potenciometro_control_analogico.jpeg" alt="circuito_potenciometro" width="60%">
 <br><br>
-Ahora se implementa un circuito utilizando variador de velocidad para variar velocidad de motor trifásico y también el sentido de giro.
+
+Ahora se implementa un circuito utilizando variador de velocidad Synamics G120 para variar velocidad de motor trifásico y también el sentido de giro.
+
+Potenciómetro -> %IW64
+Entrega una tensión de 0 a 10 V que llega a la entrada analógica integrada de CPU1214C (AIO = IW64)
+El PLC la convertirá en un número entero: 0V -> 0 y 10V -> 27648
+
+<br>
+
+El bloque MOVE: IW64 -> QW80 
+Copia este número tal cual a la salida analógica QW80.<br>
+Pero el 1214C AC/DC/Rly no tiene salida analógica integrada, entonces QW80 corresponde con Signal Board SB1232 aq (12 bits)
+
+Contactos I0.0/I0.1 -> Q0.0/Q0.1 de lógica directa.
+Si la entrada está activa, se activa la salida. Las salidas son de relé y cierran un contacto.
+El común de las salidas (1L) tiene que estar a 24V para que lleguen 24V a las entradas digitales del variador<br>
+
+Param       Valor     Funcion <br>
+P0700	        2	      Las órdenes vienen por bornes (no por el panel BOP) <br>
+P0701	        1	      DI0 = ON/OFF1 (marcha/paro con rampa) <br>
+P0702	       12	      DI1 = inversión de sentido de giro <br>
+P1000	        2	      La consigna de velocidad viene de la entrada analógica <br>
+P1120/P1121	 0–10 s	  Rampas de aceleración y deceleración <br>
+
 <br>
 <img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_variador_ctrl_analogico.jpg" alt="diagrama_variador_con_potenciometro" width="70%">
 <br>
