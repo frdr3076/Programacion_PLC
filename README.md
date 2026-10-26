@@ -25,7 +25,7 @@ Nivel 2
 
 Nivel 3
 - [Clase 12 - Condicionales y Timers](#clase-12---condicionales-y-timers)
-
+- [Clase 13 - Control Analógico](#clase-13---control-analogico)
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 Es interruptor electromagnético accionado por medio de bobina. Campo magnético atrae a núcleo y cierra los contactos. Posee contactos de control. Al desenergizarse desaparece campo magnético y resorte devuelve núcleo a posición inicial.
@@ -241,14 +241,14 @@ Cintas transportadoras con Veijeo<br>
 Para sistemas trifásicos, mejora las condiciones de arranque.<br>
 El variador utilizado es de marca Synamics G120. Consiste en 3 modulos: Potencia, Control y Operacion.<br>
 Utiliza parametros para ser configurados.<br>
-p700 = BORNES
-p701 = CON/DES
-p702 = SENTIDO GIRO
-p703 = BIT0
-p704 = BIT1
-p705 = BIT2
-p1000 = CONSIGUE VELOCIDAD
-p1001 = VELOCIDAD FIJA 1
+p700 = BORNES <br>
+p701 = CON/DES <br>
+p702 = SENTIDO GIRO <br>
+p703 = BIT0 <br>
+p704 = BIT1 <br>
+p705 = BIT2 <br>
+p1000 = CONSIGUE VELOCIDAD <br>
+p1001 = VELOCIDAD FIJA 1 <br>
 <br>
 Combinando los BIT tenés 2^3 = 8 posibles velocidades.<br>
 <img src="imagenes/10-variador-velocidad/control_variador_velocidad.jpg" alt="Prueba variador velocidad" width="50%">
@@ -273,7 +273,17 @@ Programa básico para activar salidas e indicarlas con un "led" (circulo) verde 
 <br>
 
 ## Clase 12 - Condicionales y Timers
-Utilizamos condiciones para encender en diferentes momentos un semaforo.
+
+Revisión de los tipos de datos existentes<br>
+Las direcciones de memoria se leen de la siguiente forma <br>
+Parte      Significado <br>
+%          Prefijo de TIA Portal para dirección absoluta <br>
+1° letra   Zona de memoria: I = Entrada, Q = Salida, M = Marcas (memoria) <br>
+2° letra   Tamaño: (nada) = bit, B = byte (8 bits), W = Word (16 bits), D = Doble word (32 bits) <br>
+Numero     Byte donde empieza el dato <br>
+<br>
+
+Como ejercitación utilizamos condiciones para encender en diferentes momentos un semaforo.<br>
 <img src="imagenes/12-condicionales/programa_plc_semaforo_condiciones.jpeg" alt="Programa Semaforo Condicionales" width="45%">
 <br>
 
@@ -283,4 +293,68 @@ Las variables utilizadas para este programa fueron:
 <br>
 Se puede ver el funcionamiento del programa en la siguiente carpeta: en el archivo "funcionamiento_semaforo_condicionales.mp4.mp4" <br>
 [Semaforo con condiciones](imagenes/12-condicionales/)
+
+
+## Clase 13 - Control analogico
+
+<br>
+
+Hacemos el siguiente diagrama de temporizador de marcha para controlar el tiempo que tarda el circuito en pararse entre (0 y 10 s) utilizando un control analógico con potenciómetro para seleccionar el tiempo.
+
+%I0.0 (INICIO) activa %M0.0 y la marca queda enclavada aunque suelte el pulsador.<br>
+Mientras %M0.0 = 1 se activa %Q0.0. <br>
+NORM_X lee entrada analógica %IW64 de 0V a 10V (0-27648) que lo pasa a número real entre 0.0 y 1.0,
+este valor queda guardado en %MD100. <br>
+SCALE_X convierte 0.0-1.0 al rango 0-10000 (base de tiempo: milisegundos) y lo guarda en %MD120, es decir que el rango queda entre 0V y 10V <br>
+T_CONV pada DINT de %MD120 al tipo TIME en %MD200. El tipo TIME se cuenta en ms (milisegundos).
+TEM1 (TON)
+Cuando %M0.0 = 1, el temporizador empieza a contar hasta PT = %MD200. Al cumplir el tiempo TEM1.Q=1 y la bobina R apaga %M0.0 apagando el motor y reiniciando temporizador <br>
+
+
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_pot.jpg" alt="potenciometro" width="70%">
+<br>
+Implementación utilizando potenciometro
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/potenciometro_control_analogico.jpeg" alt="circuito_potenciometro" width="60%">
+<br><br>
+
+Ahora se implementa un circuito utilizando variador de velocidad Synamics G120 para variar velocidad de motor trifásico y también el sentido de giro.
+
+Potenciómetro -> %IW64
+Entrega una tensión de 0 a 10 V que llega a la entrada analógica integrada de CPU1214C (10bits) y lo digitaliza (AIO = IW64 de 16 bits) <br>
+El PLC la convertirá en un número entero: 0V -> 0 y 10V -> 27648 <br>
+
+<br>
+
+El bloque MOVE: IW64 -> QW80 
+Copia este número tal cual a la salida analógica QW80.<br>
+Pero el 1214C AC/DC/Rly no tiene salida analógica integrada, entonces QW80 corresponde con Signal Board SB1232 (12 bits) <br>
+
+Se utiliza MD100 ya que es una palabra de 32 bits. Corresponde a memoria interna del PLC.
+Ocupa los bytes MB100, MB101, MB102 y MB103.
+Sirve para guardar números REALES (decimal con coma flotante) como velocidad en Hz.
+
+<br>
+
+Contactos I0.0/I0.1 -> Q0.0/Q0.1 de lógica directa.
+Si la entrada está activa, se activa la salida. Las salidas son de relé y cierran un contacto.
+El común de las salidas (1L) tiene que estar a 24V para que lleguen 24V a las entradas digitales del variador<br>
+
+Param       Valor     Funcion <br>
+P0700	        2	      Las órdenes vienen por bornes (no por el panel BOP) <br>
+P0701	        1	      DI0 = ON/OFF1 (marcha/paro con rampa) <br>
+P0702	       12	      DI1 = inversión de sentido de giro <br>
+P1000	        2	      La consigna de velocidad viene de la entrada analógica <br>
+P1120/P1121	 0–10 s	  Rampas de aceleración y deceleración <br>
+
+<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/PLC_Nivel_3y4_Clase2_variador_ctrl_analogico.jpg" alt="diagrama_variador_con_potenciometro" width="70%">
+<br>
+El diagrama ladder implementado es el siguiente:<br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/ladder_variador_control_analogico.jpeg" alt="ladder_variador_con_potenciometro" width="60%">
+<br>
+El montaje del circuito es el siguiente: <br>
+<img src="imagenes/nivel_3_y_4/2-control_analogico/Variador_control_analogico.jpeg" alt="circuito_variador_con_potenciometro" width="60%">
+
 
