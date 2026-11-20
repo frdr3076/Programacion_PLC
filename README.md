@@ -376,14 +376,22 @@ Debe ajustarse el SCALE_X entre -27648 y 27648 para que entregue la tensión ent
 
 Esquematico:
 
+<img src="imagenes\diagramas\Diagrama_intro_Contadores_Rapidos" alt="diagrama_ejercicio_intro_cont_rapido" width="60%">
+
+Diagrama_intro_Contadores_Rapidos.jpg
+
 Imagenes de conexionado:
 
 <img src="imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\conexion_motor_contadores_rapidos_2026-11-20" alt="intro_cont_rapidos_conex_motor" width="60%">
 
 <img src="imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\conexion_plc_hmi_2026-11-20" alt="intro_cont_rapidos_conex_plc" width="60%">
 
+<br>
+
+Programa de contador rápido: [Programa Contador Rapido](Programas/Proyecto_Contador_Rapido/)
 
 <br>
+
 También en los siguientes videos se pueden ver ejemplos de utilización de PWM y Tren de pulsos utilizando Twido de Schneider y motor de continua:
 
 [Ejemplo de aplicación de tren de pulsos (PLS)](imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\PLS_2026-11-20.mp4) 
