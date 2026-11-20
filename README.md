@@ -26,6 +26,9 @@ Nivel 2
 Nivel 3
 - [Clase 12 - Condicionales y Timers](#clase-12---condicionales-y-timers)
 - [Clase 13 - Control Analógico](#clase-13---control-analogico)
+- [Clase 14 - Control Analogico con HMI](clase-14---control-analogico-con-hmi)
+
+
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
 Es interruptor electromagnético accionado por medio de bobina. Campo magnético atrae a núcleo y cierra los contactos. Posee contactos de control. Al desenergizarse desaparece campo magnético y resorte devuelve núcleo a posición inicial.
@@ -357,4 +360,32 @@ El diagrama ladder implementado es el siguiente:<br>
 El montaje del circuito es el siguiente: <br>
 <img src="imagenes/nivel_3_y_4/2-control_analogico/Variador_control_analogico.jpeg" alt="circuito_variador_con_potenciometro" width="60%">
 
+[Ejercicio control analogico](Programas/Clase2_PLCN3y4)
+[Ejercicio control analogico con variador](Programa/Clase2_PLCN3y4_variador/)
+
+## Clase 14 - Control analogico con HMI
+Similar al ejercicio de clase anterior, pero en este ejercicio se utiliza un potenciometro, si se encuentra en la posición del medio el motor debe estar apagado, en cambio si se mueve al extremo izquierdo debe girar a máxima velocidad en un sentido antihorario y si el potenciometro se lleva al extremo opuesto debe girar a máxima velocidad en sentido horario.
+
+Debe ajustarse el SCALE_X entre -27648 y 27648 para que entregue la tensión entre 0V y 10V de forma correcta.
+
+<img src="imagenes/diagramas/PLC_Nivel_3y4_Clase3_ejercicio_variador_pot_hmi.jpeg" alt="variador_pot_hmi" width="60%">
+
+[Ejercicio control analogico con display HMI](Programas/Clase3_PLCN3y4_ejercicio_variador_potenciometro_display/)
+
+## Clase 15 - Introduccion a los contadores rapidos
+
+Esquematico:
+
+Imagenes de conexionado:
+
+<img src="imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\conexion_motor_contadores_rapidos_2026-11-20" alt="intro_cont_rapidos_conex_motor" width="60%">
+
+<img src="imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\conexion_plc_hmi_2026-11-20" alt="intro_cont_rapidos_conex_plc" width="60%">
+
+
+<br>
+También en los siguientes videos se pueden ver ejemplos de utilización de PWM y Tren de pulsos utilizando Twido de Schneider y motor de continua:
+
+[Ejemplo de aplicación de tren de pulsos (PLS)](imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\PLS_2026-11-20.mp4) 
+[Ejemplo de modulación de ancho de pulso (PWM)](imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\PWM_2026-11-20.mp4)
 
