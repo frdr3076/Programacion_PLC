@@ -27,6 +27,8 @@ Nivel 3
 - [Clase 12 - Condicionales y Timers](#clase-12---condicionales-y-timers)
 - [Clase 13 - Control Analógico](#clase-13---control-analogico)
 - [Clase 14 - Control Analogico con HMI](clase-14---control-analogico-con-hmi)
+- [Clase 15 - Intro a Contadores Rapidos](clase-15---introduccion-a-los-contadores-rapidos)
+- [Clase 16 - Contadores Rapidos y HMI](clase-16---ejercicio-contadores-rapidos-y-hmi)
 
 
 ## Clase 1 - Introduccion
@@ -396,4 +398,17 @@ También en los siguientes videos se pueden ver ejemplos de utilización de PWM 
 
 [Ejemplo de aplicación de tren de pulsos (PLS)](imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\PLS_2026-11-20.mp4) 
 [Ejemplo de modulación de ancho de pulso (PWM)](imagenes\nivel_3_y_4\4-introduccion_contadores_rapidos\PWM_2026-11-20.mp4)
+
+
+## Clase 16 - Ejercicio Contadores Rapidos y HMI
+
+Esquematico:
+
+<br>
+Programa:
+[Programa de contador rapido con pantalla HMI](Programas\Proyecto_Contador_Rapido_HMI)
+
+
+<br>
+Resultado:
 
