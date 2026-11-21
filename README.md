@@ -30,6 +30,9 @@ Nivel 3
 - [Clase 15 - Intro a Contadores Rapidos](clase-15---introduccion-a-los-contadores-rapidos)
 - [Clase 16 - Contadores Rapidos y HMI](clase-16---ejercicio-contadores-rapidos-y-hmi)
 
+Nivel 4
+
+- [Clase 17 - Redes en industria](clase-17---redes-industriales)
 
 ## Clase 1 - Introduccion
 <strong>Contactor:</strong><br>
@@ -402,13 +405,34 @@ También en los siguientes videos se pueden ver ejemplos de utilización de PWM 
 
 ## Clase 16 - Ejercicio Contadores Rapidos y HMI
 
+Este ejercicio propone utilizar pantalla HMI para configurar el sentido de giro del motor, así como introducir la velocidad del motor deseada entre 0 y 3000 rpm, finalmente visualizar el valor actual de velocidad de motor en un gráfico de barra.
+
+<br>
 Esquematico:
-
+<img src="imagenes\diagramas\Contador_Rapido_con_HMI.jpg" alt="diag_cont_rapido_con_hmi" width="60%">
 <br>
+
 Programa:
-[Programa de contador rapido con pantalla HMI](Programas\Proyecto_Contador_Rapido_HMI)
 
+[Programa de contador rapido con pantalla HMI](Programas\Proyecto_Contador_Rapido_HMI)
+<br>
+<img src="imagenes\nivel_3_y_4\5-ejercicio_contadores_rapidos_con_hmi\programa_ladder_cont_rap_hmi.jpg" alt="programa_ladder_cont_rap_hmi" width="60%">
+<br>
+<img src="imagenes\nivel_3_y_4\5-ejercicio_contadores_rapidos_con_hmi\interface_hmi_con_cont_rap.jpg" alt="interface_hmi_con_cont_rap" width="60%">
+<br>
+<img src="imagenes\nivel_3_y_4\5-ejercicio_contadores_rapidos_con_hmi\variables_de_cont_rap_con_hmi.jpg" alt="variables_de_cont_rap_con_hmi" width="60%">
+<br><br>
+
+Resultado:
+
+<img src="imagenes\nivel_3_y_4\5-ejercicio_contadores_rapidos_con_hmi\pantalla_hmi.jpg" alt="pantalla_hmi" width="60%">
 
 <br>
-Resultado:
+En la siguiente carpeta se tiene video del funcionamiento del sistema completo que utiliza plc, variador, pantalla hmi y motor trifasico con contadores rapidos:
+<br>
+[Video funcionamiento: variador, contadores rapidos y HMI](imagenes\nivel_3_y_4\5-ejercicio_contadores_rapidos_con_hmi\video_funcionamiento_cont_rap_hmi)
+<br>
+
+
+## Clase 17 - Redes industriales
 
