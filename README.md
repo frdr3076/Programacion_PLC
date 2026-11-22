@@ -436,3 +436,35 @@ En la siguiente carpeta se tiene video del funcionamiento del sistema completo q
 
 ## Clase 17 - Redes industriales
 
+Esquema de una red industrial:
+<img src="imagenes\diagramas\Diagrama_comunicacion_industrial.jpg" alt="diagrama_red_industrial" width="60%">
+<br>
+
+Programa:
+<br>
+Se realiza ejercicio que consiste en comunicar dos PLCs S7-200 entre sí, y al activar %I0.0 en uno active la salida %Q0.0 del otro.
+
+<br>
+Para configurar la red industrial, tener en cuenta los siguientes pasos:
+<br>
+Se deberán hacer 2 programas, es decir 1 programa para configurar cada PLC.
+
+<br>
+
+1- Programa 1: Utilizar bloque NET_EXE con timeout de 500 y asignar M30.0 y M30.1 a Ciclo y Error respectivamente.<br>
+   Luego utilizar bloque MOV para asignar VB0 a QB0 <br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial1.jpg" alt="config_red_industrial1" width="60%">
+
+2- Programa 1 y 2 - En "Asistentes" se debe configurar la NET el puerto de comunicación en el que ambos PLC van a escribir y leer datos de memoria entre sí, se hace a través de "Puerto de comunicación": <br>
+
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial2.jpg" alt="config_red_industrial2" width="60%">
+<br>
+
+En el asistente de configuración hay que completar las opciones con NETR y NETW. <br>
+Para NETR, especifica que se leeran 2 bytes de la CPU remota, que la dirección de CPU remota es la 4 y donde se deben guardar y leer los datos.
+En este caso, guardar de VB0 a VB1 y leer de VB10 a VB11. <br>
+
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial3.jpg" alt="config_red_industrial3" width="60%">
+<br>
+
+Para NETW, también se leen 2 bytes de la CPU remota, direccion de CPU remota es 4, pero en este caso, leer de VB2 a VB3 y guardar de VB12 a VB13. <br>
