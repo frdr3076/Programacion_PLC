@@ -454,6 +454,8 @@ Se deberán hacer 2 programas, es decir 1 programa para configurar cada PLC.
 1- Programa 1: Utilizar bloque NET_EXE con timeout de 500 y asignar M30.0 y M30.1 a Ciclo y Error respectivamente.<br>
    Luego utilizar bloque MOV para asignar VB0 a QB0 <br>
 <img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial1.jpg" alt="config_red_industrial1" width="60%">
+<br>
+   El Programa 2 será similar pero en MOV_B asignamos IN:IB0 y OUT:VB10. <br>
 
 2- Programa 1 y 2 - En "Asistentes" se debe configurar la NET el puerto de comunicación en el que ambos PLC van a escribir y leer datos de memoria entre sí, se hace a través de "Puerto de comunicación": <br>
 
@@ -468,3 +470,16 @@ En este caso, guardar de VB0 a VB1 y leer de VB10 a VB11. <br>
 <br>
 
 Para NETW, también se leen 2 bytes de la CPU remota, direccion de CPU remota es 4, pero en este caso, leer de VB2 a VB3 y guardar de VB12 a VB13. <br>
+
+
+3- Los puertos de comunicación tienen sus direcciones de CPU separadas, para uno será la dirección 3 y para otro el 4.<br>
+   Se configura en Comunicacion > Puertos de comunicacion > Direccion de la CPU. <br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial4.jpg" alt="config_red_industrial4" width="60%"><br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial5.jpg" alt="config_red_industrial5" width="60%"><br>
+
+4- Programas 1 y 2: Tienen las siguientes configuraciones y direcciones de memoria.<br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial6.jpg" alt="config_red_industrial6" width="60%"><br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\config_red_industrial7.jpg" alt="config_red_industrial7" width="60%"><br>
+
+5- Al pulsar el switch %I0.0 se debe accionar el %Q0.0 y encender LED.<br>
+<img src="imagenes\nivel_3_y_4\6-comunicacion_industrial\conexion_red_industrial.jpg" alt="conexion_red_industrial" width="60%"><br>
