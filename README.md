@@ -443,6 +443,10 @@ Esquema de una red industrial:
 Programa:
 <br>
 Se realiza ejercicio que consiste en comunicar dos PLCs S7-200 entre sí, y al activar %I0.0 en uno active la salida %Q0.0 del otro.
+Esta es una comunicación punto a punto que utiliza el puerto 0 y comparten variables de memoria entre los PLCs.<br>
+
+<img src="imagenes\diagramas\comunicacion_punto_a_punto.jpg" alt="comunicacion_punto_a_punto" width="60%">
+<br>
 
 <br>
 Para configurar la red industrial, tener en cuenta los siguientes pasos:
